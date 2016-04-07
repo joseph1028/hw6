@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<link href="assets/style.css" type="text/css" rel="stylesheet" />
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js" ></script>
+	</head>
+	<body>
+
+		<div id="headline">
+			<h1 id="H01">童話日記 Beta 註冊</h1>
+		</div>
+
+	<div id="empty">
+	</div>
+
+		<form method="POST" action="/person">
+
+			<div id="picture">
+			</div>
+
+			<h2 id="H02">請建立您的童話角色</h2>
+			<h4>描述請在20字以內</h4>
+			角色名稱 <input type="text" id="username" name="username" /><br />
+			職業    <input type="text" id="workname" name="workname" /><br />
+			天賦    <input type="text" id="time" name="time" /><br />
+			描述    <input type="text" id="content" name="content" /><br />
+			<input type="submit" value="加入童話日記" />
+		</form>
+
+		<div id="empty02">
+		</div>
+
+	<div id="P02">
+		<h2>目前已註冊的角色</h2>
+		<% if (userinfos.length) { %>
+		  <ul>
+  		  <% userinfos.forEach(function(userinfo){ %>
+		      <li><%= userinfo['username'] %>  <%= userinfo['workname'] %>  <%= userinfo['time'] %>  <%= userinfo['content'] %></li>
+		    <% }) %>
+	  	</ul>
+		<% } %>
+	</div>
+
+	<div id="empty03">
+	</div>
+
+	<div id="footer">
+			<p>
+				HW6 測試用網頁 © 2016
+			</p>
+		</div>
+	</body>
+</html>
