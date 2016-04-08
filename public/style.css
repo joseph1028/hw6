@@ -18,7 +18,7 @@ form{
 	font-size: 15px;
 	background-color: rgba(235, 235, 245, 0.5);
 	border: 1px solid rgb(200, 200, 200);
-	height: 200px;
+	height: 250px;
 	width: 200px;
 	border-radius: 20px;
 }
@@ -67,7 +67,7 @@ color: rgb(155, 15, 15);
 }
 #H02{
 	height: 20px;
-	width: 203px;
+	width: 210px;
 }
 
 #p02{
